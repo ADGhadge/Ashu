@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas: "navbar navbar navbar navbar""carosole carosole carosole carosole"
+        "row row row row""solutions solutions solutions solutions""tech tech tech tech"
+        "blue-box blue-box blue-box blue-box""expert expert expert expert""heading heading heading heading"
+        "abc abc abc abc""have have have have""recent recent recent recent""three three three three"
+        "last last last last""footer footer footer footer";
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    position: fixed;
+    grid-area: navbar;
+    font-size: 15px;
+    font-weight:bold;
+}
+.links{
+/* display:block; */
+}
+
+.carosole {
+    display: grid;
+    height: 600px;
+    grid-area: carosole;
+    grid-template-areas: "left-1 left-1 right-1 right-1";
+    color: black;
+}
+
+.right-1 {
+    height: 450px;
+    width: 500px;
+    grid-area: right-1;
+    background-image: url(https://barakahit.net/html/Techmax/assets/img/home-font.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:450px;
+    padding-top: 620px;
+}
+
+.left-1 {
+    height: 500px;
+    width: 550px;
+    background-color:red;
+    grid-area: left-1;
+    color: black;
+    
+}
+
+.row {
+    height: 500px;
+    background-color: blue;
+    grid-area: row;
+}
+
+.box-1 {
+    width: 350px;
+    height: 400px;
+    background-color: white;
+    float: left;
+    border-radius: 30px;
+    margin-top: 45px;
+    margin-left: 45px;
+}
+
+
+
+.solutions {
+    height: 600px;
+    background-color: orange;
+    grid-area: solutions;
+}
+
+.textt {
+    width: 500px;
+    height: 400px;
+    background-color: rgb(239, 243, 231);
+    margin-top: 100px;
+    margin-left: 100px;
+    float: left;
+}
+
+.imgg {
+    width: 500px;
+    height: 400px;
+    background-color: rgb(245, 245, 238);
+    margin-left: 10px;
+    margin-top: 100px;
+    float: left;
+
+}
+
+.tech {
+    height: 600px;
+    background-color: rgb(224, 15, 144);
+    grid-area: tech;
+}
+
+.imgg-2 {
+    width: 500px;
+    height: 400px;
+    background-color: rgb(245, 245, 238);
+    margin-left: 100px;
+    margin-top: 100px;
+    float: left;
+
+}
+
+.textt-2 {
+    width: 500px;
+    height: 400px;
+    background-color: rgb(239, 243, 231);
+    margin-left: 10px;
+    margin-top: 100px;
+    float: left;
+}
+
+.blue-box {
+    height: 200px;
+    background-color: rgb(17, 40, 240);
+    grid-area: blue-box;
+}
+
+.expert {
+    height: 350px;
+    background-color: rgb(236, 222, 15);
+    grid-area: expert;
+}
+
+.box-2 {
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    float: left;
+    margin-top: 45px;
+    margin-left: 45px;
+}
+
+.heading {
+    height: 80px;
+    background-color: rgb(247, 241, 241);
+    grid-area: heading;
+    font-size: 40px;
+    font-style: italic;
+    text-align: center;
+    padding: 50px;
+}
+
+.abc {
+    height: 350px;
+    background-color: rgb(211, 136, 51);
+    grid-area: abc;
+}
+
+.box-3 {
+    width: 250px;
+    height: 280px;
+    background-color: white;
+    float: left;
+    margin-top: 45px;
+    margin-left: 45px;
+}
+
+.have {
+    height: 250px;
+    background-color: rgb(9, 20, 119);
+    grid-area: have;
+    font-style: oblique;
+    text-align: center;
+}
+
+.p {
+    font-size: 100px;
+}
+
+button {
+    height: 45px;
+    width: 130px;
+    border-radius: 20px;
+    font-size: 15px;
+    color: blue;
+}
+
+button:hover {
+    background-color: blue;
+}
+
+.recent {
+    height: 70px;
+    grid-area: recent;
+    background-color: brown;
+    text-align: center;
+    font-size: 30px;
+    padding: 50px;
+}
+
+.three {
+    height: 600px;
+    background-color: rgb(31, 233, 12);
+    grid-area: three;
+}
+
+.box-4 {
+    width: 340px;
+    height: 500px;
+    background-color: white;
+    float: left;
+    border-radius: 5px;
+    margin-top: 45px;
+    margin-left: 45px;
+}
+
+.last {
+    height: 300px;
+    grid-area: last;
+    background-color: blue;
+}
+
+.footer {
+    grid-area: footer;
+    height: 100px;
+    background-color: rgb(26, 25, 25);
+    color: white;
+}
+li{
+    float: left;
+    padding-right: 20px;
+}
+li a{
+    display: block;
+    color: black;
+}
+h2{
+    padding-left: 100px;
+    padding-top: 20px;
+    font-size: 25px;
+}
+.logo{
+    float: left;
+    /* margin-right: 100px; */
+}
+
+.links{
+    float: left;
+    margin-left: 750px;
+ 
+}

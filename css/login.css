@@ -1,0 +1,25 @@
+*{margin: 0;padding: 0; box-sizing: border-box;}
+.main{
+    height: 800px;
+    width: 100%;
+}
+.form2{
+    padding-top: 100px;
+  padding-right: 210px;
+    height: 500px;
+    width: 100%;
+    text-align: center;
+    background-image: url("https://img.freepik.com/premium-vector/modern-blue-white-abstract-presentation-background-with-corporate-concept_181182-19917.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: 50%;
+    }
+    button{
+        height: 30px;
+        width: 130px;
+        border-radius: 10px;
+        color: black;
+        background-color:red;
+        cursor: pointer;
+        margin-left: 40px;
+    }

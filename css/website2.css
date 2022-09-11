@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+ 
+}
+
+.container {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    /* margin-top: 100px; */
+    grid-template-areas: "navbar navbar navbar navbar""carosol carosol carosol carosol"
+        "left-col left-col right-col right-col""right-col-1 right-col-1 left-col-1 left-col-1""left-col-2 left-col-2 right-col-2 right-col-2""footer footer footer footer";
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.507);
+    grid-area: navbar;
+    position: fixed;
+    top: 0;
+}
+
+.carosol {
+    height: 657px;
+    background-color: rgb(48, 248, 172);
+    grid-area: carosol;
+}
+
+
+
+.left-col {
+    height: 500px;
+    /* background-color: blue; */
+    
+    grid-area: left-col;
+    padding: 20px;
+}
+
+.right-col {
+    height: 500px;
+    /* background-color: rgb(94, 46, 7); */
+    grid-area: right-col;
+    padding: 20px;
+}
+
+.left-col-1 {
+    height: 500px;
+    /* background-color: blue; */
+    grid-area: left-col-1;
+    padding: 20px;
+}
+
+.right-col-1 {
+    height: 500px;
+    /* background-color: rgb(94, 46, 7); */
+    grid-area: right-col-1;
+    padding: 20px;
+}
+
+
+.left-col-2 {
+    height: 500px;
+    /* background-color: blue; */
+    grid-area: left-col-2;
+    padding: 20px;
+}
+
+.right-col-2 {
+    height: 500px;
+    /* background-color: rgb(94, 46, 7); */
+    grid-area: right-col-2;
+    padding: 20px;
+}
+
+button {
+    background-color: rgb(22, 20, 20);
+    height: 60px;
+    width: 180px;
+    border-radius: 20px;
+    margin-top: 100px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.footer {
+    height: 45px;
+    background-color: rgb(10, 10, 10);
+    grid-area: footer;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+
+.navbar .navbar-brand {
+    float: left;
+    margin: 20px;
+    color: white;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar .navbar-nav {
+    float: right;
+    margin: 15px;
+}
+
+.navbar .navbar-nav,
+li,
+a {
+    display: inline;
+    text-decoration: none;
+    margin-left: 16px;
+    color: white;
+}
+
+.box-2 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZo90Kl6mmEQXsbTDhwu39Cl9CkmugNg6Cxw&usqp=CAU");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heading-block {
+    color: white;
+    margin-top: 120px;
+    text-align: center;
+   
+}
+
+
+
+.heading-block h1 {
+    font-size: 100px;
+}
+
+.heading-block h2 {
+    font-size: 60px;
+}
+
+.right-col img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    margin-top: 30px;
+    scroll-behavior: smooth;
+}
+
+.left-col .about-text {
+    width: 400px;
+    margin-left: 200px;
+    margin-top: 100px;
+    text-align: left;
+}
+
+.left-col .about-text h1 {
+    font-size: 55px;
+}
+
+.left-col .about-text p {
+    line-height: 27px;
+}
+
+
+.right-col img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+
+.left-col .about-text {
+    width: 400px;
+    margin-left: 200px;
+    margin-top: 100px;
+    text-align: left;
+}
+
+.left-col .about-text h1 {
+    font-size: 55px;
+}
+
+.left-col .about-text p {
+    line-height: 27px;
+}
+
+
+
+.right-col img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+
+.left-col .about-text {
+    width: 400px;
+    margin-left: 200px;
+    margin-top: 100px;
+    text-align: left;
+}
+
+.left-col .about-text h1 {
+    font-size: 55px;
+}
+
+.left-col .about-text p {
+    line-height: 27px;
+}
+
+
+
+
+
+.right-col-1 img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+.left-col-1 .about-text {
+    width: 400px;
+    margin-top: 100px;
+    text-align: left;
+}
+
+.left-col-1 .about-text h1 {
+    font-size: 55px;
+}
+
+.left-col-1 .about-text p {
+    line-height: 27px;
+}
+
+.right-col-2 img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+
+.left-col-2 .about-text {
+    width: 400px;
+    margin-left: 200px;
+    margin-top: 100px;
+    text-align: left;
+}
+
+.left-col-2 .about-text h1 {
+    font-size: 55px;
+}
+
+.left-col-2 .about-text p {
+    line-height: 27px;
+}

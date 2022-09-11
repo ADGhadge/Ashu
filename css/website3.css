@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    grid-template-areas: "navbar navbar navbar navbar""home home home home""three-box three-box three-box three-box";
+}
+
+.navbar {
+    height: 70px;
+    color: black;
+    font-size: 25px;
+    padding: 10px;
+    padding-left: 40px;
+    grid-area: navbar;
+}
+
+.navbar .links {
+    font-size: 17px;
+}
+
+.home {
+    display: grid;
+    /* height: 500px; */
+
+    float: left;
+    grid-template-areas: "text text bgimg-col bgimg-col";
+}
+
+.text {
+    /* font-size: 30px; */
+    margin-top: 100px;
+    margin-left: 60px;
+    height: 500px;
+    width: 400px;
+    grid-area: text;
+    font-weight: 400;
+}
+
+.bgimg-col {
+    height: 500px;
+    width: 650px;
+    background-image: url("/b.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-area: bgimg-col;
+}
+
+.h1 {
+    font-size: 100px;
+    background-color: yellowgreen;
+}
+
+.links {
+    float: right;
+}
+
+.three-box {
+    height: 900px;
+    width: 100%;
+    grid-template-areas: "box-1 box-2 box-3 ";
+}
+
+.box-1 {
+    height: 300px;
+    width: 100px;
+    background-color: rgb(249, 250, 252);
+    grid-area: box-1;
+    margin-top: 100px;
+}
+
+.box-2 {
+    height: 300px;
+    width: 100px;
+    background-color: rgb(11, 10, 10);
+    grid-area: box-2;
+}
+
+.box-3 {
+    height: 300px;
+    width: 100px;
+    background-color: rgb(249, 250, 252);
+    grid-area: box-3;
+}
+
+button {
+    width: 100px;
+    height: 35px;
+    margin-top: 40px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: blueviolet;
+}
